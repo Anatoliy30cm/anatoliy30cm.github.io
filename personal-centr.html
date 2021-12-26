@@ -11,13 +11,12 @@
 	</head>
 
 	<body class="bg-personal">
-		<!-- Контейнер для заднего фона мобильного меню-->
 		<div class="bg-mobile-menu"></div><!-- HEADER-->
 		<header class="header container"><a class="header__logo" href="/"><img class="header__logo-img" src="/images/images/logo.png" alt="Светлый жилой район" /></a>
-			<nav class="menu"><button class="btn-close"></button><a class="menu__link" href="#">Расположение и инфраструктура</a><a class="menu__link" href="#">Галерея</a><a class="menu__link" href="#">Новости</a><a class="menu__link" href="#">Вакансии</a><a class="menu__link" href="#">Контакты</a><span class="menu__link menu__link_drop-list">Я Житель<svg class="icon-drop-arrow" width="12" height="7" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<nav class="menu"><button class="btn-close"></button><a class="menu__link menu__link_mobile" href="/">Главная</a><a class="menu__link menu__link_mobile" href="#">О проекте</a><a class="menu__link" href="#">Расположение и инфраструктура</a><a class="menu__link" href="#">Галерея</a><a class="menu__link" href="/news.html">Новости</a><a class="menu__link menu__link_desktop" href="#">Вакансии</a><a class="menu__link" href="#">Контакты</a><a class="menu__link menu__link_mobile" href="#">УК «Согласие»</a><a class="menu__link menu__link_mobile" href="/personal-centr.html">Кадровый центр</a><a class="menu__link menu__link_mobile" href="#">Информация для жителей</a><a class="menu__link menu__link_mobile" href="/memorial-complex.html">Мемориальный Комплекс <br>Благодарности Предкам</a><span class="menu__link menu__link_drop-list">Я Житель<svg class="icon-drop-arrow" width="12" height="7" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-linecap="round"/>
 </svg>
-<div class="menu__wrap-drop-list"><a class="menu__link" href="#">Кадровый центр</a><a class="menu__link" href="#">Информация для жителей</a><a class="menu__link" href="#">Обратиться к руководителю</a></div></span></nav><button class="btn-menu"></button>
+<div class="menu__wrap-drop-list"><a class="menu__link" href="/personal-centr.html">Кадровый центр</a><a class="menu__link" href="#">Информация для жителей</a><a class="menu__link" href="/leadership.html">Обратиться к руководителю</a></div></span></nav><button class="btn-menu"></button>
 			<div class="socials">
 				<!--include ../../../public/images/icons/i-->
 			</div>
@@ -124,8 +123,46 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer container">
-			<h1>FOOTER</h1>
+		<footer class="footer">
+			<div class="footer__navigation container">
+				<div class="footer__contact">
+					<h2 class="heading heading_h2 heading_mb">Контакты</h2>
+					<div class="footer__wrap-address"><svg class="icon-address" width="12" height="16">
+							<use class="icon-address__use" xlink:href="/images/images/icon-address.svg#icon-address"></use>
+						</svg><span class="footer__location">Новосибирская обл., <br>п. Октябрьский, ул. Локтинская, д. 10/2</span></div><a class="footer__wrap-tel" href="tel:+73833830735"><svg class="icon-tel" width="16" height="17">
+							<use class="icon-tel__use" xlink:href="/images/images/icon-phone.svg#icon-phone"></use>
+						</svg><span class="footer__tel">8 (383) 383 07 35</span></a>
+					<div class="footer__wrap-social"><a class="footer__social" href="https://ok.ru/group/62875619033271"><svg class="icon-ok" width="12" height="19">
+								<use class="icon-ok__use" xlink:href="/images/images/icon-ok.svg#icon-ok"></use>
+							</svg></a><a class="footer__social" href="https://www.instagram.com/svetlii_info/"><svg class="icon-inst" width="18" height="18">
+								<use class="icon-inst__use" xlink:href="/images/images/icon-inst.svg#icon-inst"></use>
+							</svg></a><a class="footer__social" href="https://vk.com/svetlyy_info"><svg class="icon-vk" width="20" height="20">
+								<use class="icon-vk__use" xlink:href="/images/images/icon-vk.svg#icon-vk"></use>
+							</svg></a><a class="footer__social" href="https://t.me/svetlii_inf"><svg class="icon-tg" width="22" height="21">
+								<use class="icon-tg__use" xlink:href="/images/images/icon-tg.svg#icon-tg"></use>
+							</svg></a><a class="footer__social" href="https://wa.me/79130135084"><svg class="icon-icon-whatsapp" width="20" height="20">
+								<use class="icon-icon-whatsapp__use" xlink:href="/images/images/icon-whatsapp.svg#icon-whatsapp"></use>
+							</svg></a></div>
+				</div>
+				<nav class="menu-footer">
+					<ul class="menu-footer__wrap-links">
+						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="/">Главная</a></li>
+						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="#">О проекте</a></li>
+						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="#">Расположение и инфраструктура</a></li>
+						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="#">Галерея</a></li>
+						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="/news.html">Новости</a></li>
+						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="#">Контакты</a></li>
+					</ul>
+					<ul class="menu-footer__wrap-links">
+						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="#">УК «Согласие»</a></li>
+						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="/personal-centr.html">Кадровый центр</a></li>
+						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="#">Информация для жителей</a></li>
+						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="/memorial-complex.html">Мемориальный Комплекс Благодарности Предкам</a></li>
+					</ul>
+				</nav>
+			</div>
+			<hr class="footer__hr" />
+			<div class="footer__data-policy container"><a class="footer__policy" href="#">Политика обработки персональных данных</a><span class="footer__rights">Все права защищены 2021. Жилой комплекс “Светлый”</span></div>
 		</footer>
 		<script defer src="/js/app.js"></script>
 	</body>
