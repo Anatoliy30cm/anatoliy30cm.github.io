@@ -13,7 +13,7 @@
 	<body class="bg-index">
 		<div class="bg-mobile-menu"></div><!-- HEADER-->
 		<header class="header container"><a class="header__logo" href="/"><img class="header__logo-img" src="/images/images/logo.png" alt="Светлый жилой район" /></a>
-			<nav class="menu"><button class="btn-close"></button><a class="menu__link menu__link_mobile" href="/">Главная</a><a class="menu__link menu__link_mobile" href="#">О проекте</a><a class="menu__link" href="#">Расположение и инфраструктура</a><a class="menu__link" href="#">Галерея</a><a class="menu__link" href="/news.html">Новости</a><a class="menu__link menu__link_desktop" href="#">Вакансии</a><a class="menu__link" href="#">Контакты</a><a class="menu__link menu__link_mobile" href="#">УК «Согласие»</a><a class="menu__link menu__link_mobile" href="/personal-centr.html">Кадровый центр</a><a class="menu__link menu__link_mobile" href="#">Информация для жителей</a><a class="menu__link menu__link_mobile" href="/memorial-complex.html">Мемориальный Комплекс <br>Благодарности Предкам</a><span class="menu__link menu__link_drop-list">Я Житель<svg class="icon-drop-arrow" width="12" height="7" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<nav class="menu"><button class="btn-close"></button><a class="menu__link menu__link_mobile" href="/">Главная</a><a class="menu__link menu__link_mobile" href="#">О проекте</a><a class="menu__link" href="#">Расположение и инфраструктура</a><a class="menu__link" href="#">Галерея</a><a class="menu__link menu__link_desktop" href="#">Вакансии</a><a class="menu__link" href="#">Контакты</a><a class="menu__link menu__link_mobile" href="#">УК «Согласие»</a><a class="menu__link menu__link_mobile" href="/personal-centr.html">Кадровый центр</a><a class="menu__link menu__link_mobile" href="#">Информация для жителей</a><a class="menu__link menu__link_mobile" href="/memorial-complex.html">Мемориальный Комплекс <br>Благодарности Предкам</a><span class="menu__link menu__link_drop-list">Я Житель<svg class="icon-drop-arrow" width="12" height="7" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-linecap="round"/>
 </svg>
 <div class="menu__wrap-drop-list"><a class="menu__link" href="/personal-centr.html">Кадровый центр</a><a class="menu__link" href="#">Информация для жителей</a><a class="menu__link" href="/leadership.html">Обратиться к руководителю</a></div></span></nav><button class="btn-menu"></button>
@@ -169,19 +169,19 @@
 				<div class="feedback-form container">
 					<div class="main-form"><img class="main-form__back-img" src="/images/images/main-form.png" /><img class="main-form__back-img-mobile" src="/images/images/main-form-mobile.png" />
 						<div class="main-form__content">
-							<form class="form" action="/">
+							<form class="form" action="./indexMail.php" method="post">
 								<h2 class="heading heading_h2">Отправить сообщение</h2>
 								<div class="form__control-items-col1">
 									<div class="form__control-item"><input class="form__fio" name="fio" type="text" id="fio" required="required" /><label class="form__tooltip tooltip-fio" for="fio">ФИО</label></div>
 									<div class="form__control-item"><input class="form__phone" name="phone" data-phone="data-phone" type="tel" placeholder="+7(___)___-__-__" required="required" /></div>
-									<div class="form__control-item"><input class="form__mail" name="mail" id="mail" type="mail" required="required" /><label class="form__tooltip tooltip-mail" for="mail">E-mail</label></div>
+									<div class="form__control-item"><input class="form__mail" name="email" id="email" type="email" required="required" /><label class="form__tooltip tooltip-mail" for="mail">E-mail</label></div>
 								</div>
 								<div class="form__control-items-col2">
 									<div class="form__control-item form__control-item_textarea"><textarea class="form__message" name="message" id="message" placeholder="Ваше сообщение"></textarea></div>
 								</div>
 								<div class="form__control-items-col3">
 									<div class="form__control-item form__control-item_submit"><button class="form__button" type="submit">Отправить сообщение</button>
-										<div class="form__persona-info">Нажимая на кнопку, вы подтверждаете согласие на<br /><a class="form__personal-link" href="#">обработку персональных данных</a></div>
+										<div class="form__persona-info">Нажимая на кнопку, вы подтверждаете согласие на<br /><a class="form__personal-link" href="/">обработку персональных данных</a></div>
 									</div>
 								</div>
 							</form>
@@ -189,7 +189,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="development-prospects container">
+			<section class="development-prospects container">
 				<h2 class="heading heading_h2">Перспективы развития</h2><svg id="icons-development-prospects" width="916" height="916" viewBox="0 0 916 916" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<circle cx="458" cy="458.002" r="269.5" stroke="url(#paint0_linear_1045_4285)" />
 					<path d="M110.5 458C110.5 649.919 266.081 805.5 458 805.5C649.919 805.5 805.5 649.919 805.5 458C805.5 266.081 649.919 110.5 458 110.5C266.081 110.5 110.5 266.081 110.5 458Z" stroke="url(#paint1_linear_1045_4285)" stroke-opacity="0.5" />
@@ -330,26 +330,7 @@
 				<div class="element-prospect"><svg class="element-prospect__picture" width="40" height="40">
 						<use class="element-prospect__picture__use" xlink:href="/images/development-prospects/elem-new-schools.svg#elem-new-schools"></use>
 					</svg><span class="element-prospect__desc">Три новые школы (одна с бассейном)</span></div>
-			</div>
-			<div class="last-news container">
-				<h2 class="heading heading_h2">Последние новости</h2>
-				<div class="news__items">
-					<div class="news-item" style="background: linear-gradient(0deg, rgba(19, 22, 52, 0.7), rgba(19, 22, 52, 0.7)), url('./images/news-1.jpg');">
-						<h4 class="heading heading_h4">Открытие мемориала</h4>
-						<p class="news-item__description">В Светлом есть собственный фитнес-клуб, спортивные секции для детей и взрослых, футбольное и волейбольное поле, Workout – площадки.</p><a class="news-item__link" href="/">Подробнее<svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M18.8536 4.48441C19.0488 4.28915 19.0488 3.97257 18.8536 3.77731L15.6716 0.595325C15.4763 0.400063 15.1597 0.400063 14.9645 0.595325C14.7692 0.790588 14.7692 1.10717 14.9645 1.30243L17.7929 4.13086L14.9645 6.95929C14.7692 7.15455 14.7692 7.47113 14.9645 7.66639C15.1597 7.86166 15.4763 7.86166 15.6716 7.66639L18.8536 4.48441ZM0 4.63086H18.5V3.63086H0L0 4.63086Z" fill="#6FC11C" />
-							</svg>
-						</a>
-					</div>
-					<div class="news-item" style="background: linear-gradient(0deg, rgba(19, 22, 52, 0.7), rgba(19, 22, 52, 0.7)), url('./images/news-2.jpg');">
-						<h4 class="heading heading_h4">Открытие мемориала</h4>
-						<p class="news-item__description">В Светлом есть собственный фитнес-клуб, спортивные секции для детей и взрослых, футбольное и волейбольное поле, Workout – площадки.</p><a class="news-item__link" href="/">Подробнее<svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M18.8536 4.48441C19.0488 4.28915 19.0488 3.97257 18.8536 3.77731L15.6716 0.595325C15.4763 0.400063 15.1597 0.400063 14.9645 0.595325C14.7692 0.790588 14.7692 1.10717 14.9645 1.30243L17.7929 4.13086L14.9645 6.95929C14.7692 7.15455 14.7692 7.47113 14.9645 7.66639C15.1597 7.86166 15.4763 7.86166 15.6716 7.66639L18.8536 4.48441ZM0 4.63086H18.5V3.63086H0L0 4.63086Z" fill="#6FC11C" />
-							</svg>
-						</a>
-					</div>
-				</div>
-			</div>
+			</section>
 			<div class="full-screen-bg_subscribe-news">
 				<div class="subscribe-news container">
 					<h2 class="heading heading_h2 heading_light heading_mb">Подпишись на светлые новости</h2>
@@ -393,7 +374,6 @@
 						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="#">О проекте</a></li>
 						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="#">Расположение и инфраструктура</a></li>
 						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="#">Галерея</a></li>
-						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="/news.html">Новости</a></li>
 						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="#">Контакты</a></li>
 					</ul>
 					<ul class="menu-footer__wrap-links">
@@ -405,7 +385,7 @@
 				</nav>
 			</div>
 			<hr class="footer__hr" />
-			<div class="footer__data-policy container"><a class="footer__policy" href="#">Политика обработки персональных данных</a><span class="footer__rights">Все права защищены 2021. Жилой комплекс “Светлый”</span></div>
+			<div class="footer__data-policy container"><a class="footer__policy" href="/">Политика обработки персональных данных</a><span class="footer__rights">Все права защищены 2021. Жилой комплекс “Светлый”</span></div>
 		</footer>
 		<script src="https://api-maps.yandex.ru/2.1/?apikey=d92dd3ab-34d1-4caf-b9ed-646f69875d80&amp;lang=ru_RU" type="text/javascript"></script>
 		<script defer src="/js/app.js"></script>

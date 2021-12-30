@@ -13,7 +13,7 @@
 	<body class="bg-default">
 		<div class="bg-mobile-menu"></div><!-- HEADER-->
 		<header class="header container"><a class="header__logo" href="/"><img class="header__logo-img" src="/images/images/logo.png" alt="Светлый жилой район" /></a>
-			<nav class="menu"><button class="btn-close"></button><a class="menu__link menu__link_mobile" href="/">Главная</a><a class="menu__link menu__link_mobile" href="#">О проекте</a><a class="menu__link" href="#">Расположение и инфраструктура</a><a class="menu__link" href="#">Галерея</a><a class="menu__link" href="/news.html">Новости</a><a class="menu__link menu__link_desktop" href="#">Вакансии</a><a class="menu__link" href="#">Контакты</a><a class="menu__link menu__link_mobile" href="#">УК «Согласие»</a><a class="menu__link menu__link_mobile" href="/personal-centr.html">Кадровый центр</a><a class="menu__link menu__link_mobile" href="#">Информация для жителей</a><a class="menu__link menu__link_mobile" href="/memorial-complex.html">Мемориальный Комплекс <br>Благодарности Предкам</a><span class="menu__link menu__link_drop-list">Я Житель<svg class="icon-drop-arrow" width="12" height="7" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<nav class="menu"><button class="btn-close"></button><a class="menu__link menu__link_mobile" href="/">Главная</a><a class="menu__link menu__link_mobile" href="#">О проекте</a><a class="menu__link" href="#">Расположение и инфраструктура</a><a class="menu__link" href="#">Галерея</a><a class="menu__link menu__link_desktop" href="#">Вакансии</a><a class="menu__link" href="#">Контакты</a><a class="menu__link menu__link_mobile" href="#">УК «Согласие»</a><a class="menu__link menu__link_mobile" href="/personal-centr.html">Кадровый центр</a><a class="menu__link menu__link_mobile" href="#">Информация для жителей</a><a class="menu__link menu__link_mobile" href="/memorial-complex.html">Мемориальный Комплекс <br>Благодарности Предкам</a><span class="menu__link menu__link_drop-list">Я Житель<svg class="icon-drop-arrow" width="12" height="7" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-linecap="round"/>
 </svg>
 <div class="menu__wrap-drop-list"><a class="menu__link" href="/personal-centr.html">Кадровый центр</a><a class="menu__link" href="#">Информация для жителей</a><a class="menu__link" href="/leadership.html">Обратиться к руководителю</a></div></span></nav><button class="btn-menu"></button>
@@ -28,9 +28,9 @@
 						<h1 class="heading heading_h1">Обратиться к руководителю</h1>
 						<div class="main-form"><img class="main-form__back-img" src="/images/images/main-form.png" /><img class="main-form__back-img-mobile" src="/images/images/main-form-mobile.png" />
 							<div class="main-form__content">
-								<form class="form" action="/">
+								<form class="form" action="./leadershipMail.php" method="post">
 									<div class="form__control-items-col1">
-										<div class="form__control-item"><select class="form__select-leadership">
+										<div class="form__control-item"><select class="form__select-leadership" name="select">
 												<option class="form__leadership-option" selected="selected">Выберите руководителя</option>
 												<option class="form__leadership-option">Дарнев Светозар Павлович</option>
 												<option class="form__leadership-option">Кудрявцева Наталья Викторовна</option>
@@ -38,12 +38,12 @@
 											</select></div>
 										<div class="form__control-item"><input class="form__fio" name="fio" type="text" id="fio" required="required" /><label class="form__tooltip tooltip-fio" for="fio">ФИО</label></div>
 										<div class="form__control-item"><input class="form__phone" name="phone" data-phone="data-phone" type="tel" placeholder="+7(___)___-__-__" required="required" /></div>
-										<div class="form__control-item"><input class="form__mail" name="mail" id="mail" type="mail" required="required" /><label class="form__tooltip tooltip-mail" for="mail">E-mail</label></div>
+										<div class="form__control-item"><input class="form__mail" name="email" id="email" type="email" required="required" /><label class="form__tooltip tooltip-mail" for="mail">E-mail</label></div>
 									</div>
 									<div class="form__control-items-col2">
 										<div class="form__control-item form__control-item_textarea"><textarea class="form__message" name="message" id="message" placeholder="Ваше сообщение"></textarea></div>
 										<div class="form__control-item form__control-item_submit"><button class="form__button" type="submit">Отправить сообщение</button>
-											<div class="form__persona-info">Нажимая на кнопку, вы подтверждаете согласие на<br /><a class="form__personal-link" href="#">обработку персональных данных</a></div>
+											<div class="form__persona-info">Нажимая на кнопку, вы подтверждаете согласие на<br /><a class="form__personal-link" href="/">обработку персональных данных</a></div>
 										</div>
 									</div>
 								</form>
@@ -62,7 +62,7 @@
 									<div class="grid-block-leadership__avatar" style="background-image: url('./images/leadership/leader2.jpg');"></div>
 									<div class="grid-block-leadership__info">
 										<div class="grid-block-leadership__title">Дарнев Светозар Павлович</div>
-										<p class="grid-block-leadership__subtitle">Председатель Совета директоров строительно-финансового объединения &quot;Основа&quot;</p>
+										<p class="grid-block-leadership__subtitle">Председатель Совета директоров строительно-финансового объединения "Основа"</p>
 									</div>
 								</div>
 							</div>
@@ -71,7 +71,7 @@
 									<div class="grid-block-leadership__avatar" style="background-image: url('./images/leadership/leader3.jpg');"></div>
 									<div class="grid-block-leadership__info">
 										<div class="grid-block-leadership__title">Кудрявцева Наталья Викторовна</div>
-										<p class="grid-block-leadership__subtitle">Председатель Правления Потребительского Кооператива КГВ &quot;Основа&quot; Юридическая консультация</p>
+										<p class="grid-block-leadership__subtitle">Председатель Правления Потребительского Кооператива КГВ "Основа" Юридическая консультация</p>
 									</div>
 								</div>
 							</div>
@@ -80,7 +80,7 @@
 									<div class="grid-block-leadership__avatar" style="background-image: url('./images/leadership/leader8.jpg');"></div>
 									<div class="grid-block-leadership__info">
 										<div class="grid-block-leadership__title">Рехтин Антон Александрович</div>
-										<p class="grid-block-leadership__subtitle">Директор ООО &quot;Антар&quot;, СЗ &quot;Антарсити&quot;</p>
+										<p class="grid-block-leadership__subtitle">Директор ООО "Антар", СЗ "Антарсити"</p>
 									</div>
 								</div>
 							</div>
@@ -89,7 +89,7 @@
 									<div class="grid-block-leadership__avatar" style="background-image: url('./images/leadership/leader4.jpg');"></div>
 									<div class="grid-block-leadership__info">
 										<div class="grid-block-leadership__title">Лычко Вячеслав Сергеевич</div>
-										<p class="grid-block-leadership__subtitle">Отдел развития Жилого района &quot;Светлый&quot;</p>
+										<p class="grid-block-leadership__subtitle">Отдел развития Жилого района "Светлый"</p>
 									</div>
 								</div>
 							</div>
@@ -98,7 +98,7 @@
 									<div class="grid-block-leadership__avatar" style="background-image: url('./images/leadership/leader7.jpg');"></div>
 									<div class="grid-block-leadership__info">
 										<div class="grid-block-leadership__title">Прокопенко Александр Сергеевич</div>
-										<p class="grid-block-leadership__subtitle">Директор ООО &quot;Оплот&quot;</p>
+										<p class="grid-block-leadership__subtitle">Директор ООО "Оплот"</p>
 									</div>
 								</div>
 							</div>
@@ -116,7 +116,7 @@
 									<div class="grid-block-leadership__avatar" style="background-image: url('./images/leadership/leader-default.png');"></div>
 									<div class="grid-block-leadership__info">
 										<div class="grid-block-leadership__title">Матвейкин Сергей Викторович</div>
-										<p class="grid-block-leadership__subtitle">Директор ООО &quot;Мастерская тепла</p>
+										<p class="grid-block-leadership__subtitle">Директор ООО "Мастерская тепла</p>
 									</div>
 								</div>
 							</div>
@@ -125,7 +125,7 @@
 									<div class="grid-block-leadership__avatar" style="background-image: url('./images/leadership/leader1.jpg');"></div>
 									<div class="grid-block-leadership__info">
 										<div class="grid-block-leadership__title">Воробьёв Александр Викторович</div>
-										<p class="grid-block-leadership__subtitle">Директор ООО УК &quot;Согласие&quot;</p>
+										<p class="grid-block-leadership__subtitle">Директор ООО УК "Согласие"</p>
 									</div>
 								</div>
 							</div>
@@ -161,7 +161,6 @@
 						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="#">О проекте</a></li>
 						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="#">Расположение и инфраструктура</a></li>
 						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="#">Галерея</a></li>
-						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="/news.html">Новости</a></li>
 						<li class="menu-footer__wrap-link"><a class="menu-footer__link" href="#">Контакты</a></li>
 					</ul>
 					<ul class="menu-footer__wrap-links">
@@ -173,7 +172,7 @@
 				</nav>
 			</div>
 			<hr class="footer__hr" />
-			<div class="footer__data-policy container"><a class="footer__policy" href="#">Политика обработки персональных данных</a><span class="footer__rights">Все права защищены 2021. Жилой комплекс “Светлый”</span></div>
+			<div class="footer__data-policy container"><a class="footer__policy" href="/">Политика обработки персональных данных</a><span class="footer__rights">Все права защищены 2021. Жилой комплекс “Светлый”</span></div>
 		</footer>
 		<script src="https://api-maps.yandex.ru/2.1/?apikey=d92dd3ab-34d1-4caf-b9ed-646f69875d80&amp;lang=ru_RU" type="text/javascript"></script>
 		<script defer src="/js/app.js"></script>
