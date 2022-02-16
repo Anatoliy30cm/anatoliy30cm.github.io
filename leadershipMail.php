@@ -1,5 +1,5 @@
 <?php
-$to = "nso-osnova@yandex.ru"; //емайл получателя
+$to = "svetlyi-osnova@yandex.ru"; //емайл получателя
 $topic = "Ответы на частые вопросы"; //Тема
 
 $message = "Выберите руководитея: ".$_POST['select']."<br>"; //полученное из формы name=select
